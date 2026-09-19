@@ -1,5 +1,7 @@
 eBay Soccer Card Market Analysis
+
 ---
+
 # Project Background
 
 Buying soccer cards on eBay can be confusing for **new collectors**.
@@ -30,7 +32,7 @@ This project aims to help **new soccer card collectors make more informed buying
 > **Goal:** This project does not aim to predict future card prices.  
 > Instead, it provides a **simple, data-driven learning guide** to help newcomers understand the soccer card market before buying.
 
-# Dataset
+Dataset
 
 This project uses three main datasets:
 
@@ -48,6 +50,8 @@ This project uses three main datasets:
    Player profile data collected from **FotMob**.  
    The dataset includes player information such as name, position, team, nationality, and other profile details.  
    [View Metadata](https://github.com/KanitAon/ebay-soccer-card-market-analysis/blob/main/metadata/metadata_Player_Profiles.md)
+
+---
 
 # Market Distribution Overview
 
@@ -182,6 +186,8 @@ Prizm dominates Panini's listing volume and is also the most frequently observed
 > [!IMPORTANT]
 > **Key Finding:** Panini has more listings overall in the product lines shown, while **Prizm and Chrome are the main entry points** for understanding each brand's market.
 
+---
+
 # What Affects Soccer Card Selling Prices
 
 After understanding the overall eBay market, the next step is to explore **why some cards are priced higher than others**.
@@ -225,7 +231,7 @@ Standard cards without an autograph or patch average about **$175**, while **pat
 However, average prices can be affected by a small number of very expensive listings. The median prices are much closer:
 
 | Card Type | Listings | Average Price | Median Price |
-|---|---:|---:|---:|
+||:|:|:|
 | No Autograph / Patch | 5,784 | $174.75 | $44.99 |
 | Autograph Only | 1,125 | $235.87 | $48.00 |
 | Patch Only | 90 | $145.88 | $44.00 |
@@ -364,14 +370,14 @@ A higher-priced box usually represents a more premium product, but this does **n
 The box price is the **cost of entering the product**, while the card selling price shows how individual cards from that product are priced on eBay.
 
 | Tier | Panini | Approx. Box Price | Topps | Approx. Box Price |
-|---|---|---:|---|---:|
+|||:||:|
 | **Core** | Prizm | ~$270 | Chrome | ~$228 |
 | **Mid** | Select | ~$300–320 | Merlin | ~$261 |
 | **Luxury** | Immaculate | Higher-end | Dynasty | ~$1,782 |
 
 > **Important:** Box prices and individual card selling prices should not be compared as a direct return on investment. A box contains multiple cards, while eBay listings often represent selected cards with different players, rarity, grading, autographs, and serial numbers.
 
----
+
 
 ## Average selling price by Product Tier
 
@@ -406,7 +412,7 @@ The median prices are:
 
 This suggests that a typical Prizm listing is also priced higher, even though large price variation makes the difference in average prices statistically unclear.
 
----
+
 
 ### Mid: Select vs Merlin
 
@@ -433,7 +439,7 @@ This shows that a small number of very expensive Select cards push the average m
 
 > The average tells us about the overall price level, while the median gives a better picture of a typical listing.
 
----
+
 
 ### Luxury: Immaculate vs Dynasty
 
@@ -448,10 +454,12 @@ However, there are only **2 Dynasty listings** in the dataset, compared with **2
 
 Because of this very small sample, the Dynasty average should **not be treated as representative of the full market**.
 
----
+
 
 > [!IMPORTANT]
 > **Key Finding:** A more expensive box does not automatically mean every card from that product will have a higher selling price. The relationship depends heavily on the cards that appear in the market. In this dataset, the clearest difference appears in the **Mid tier**, where Select has a much higher average selling price than Merlin. For newcomers, use **box price to understand the product tier**, then compare **median prices, average prices, and similar individual cards** before buying.
+
+---
 
 ## How Relation Between Player Performance and Card Sell Price 
 
@@ -469,7 +477,7 @@ This is useful because different positions have different jobs. A striker, defen
 
 The goal of this section is therefore to build a **fair and independent measure of player performance** before comparing it with the eBay card market.
 
----
+
 
 ## From Match Ratings to Season Performance
 
@@ -506,7 +514,7 @@ This gives us a more stable view of player performance than using individual mat
 > [!IMPORTANT]
 > **Key Finding:** Player performance should be measured across a season, not from one match. Using season-level ratings reduces the impact of unusually good or bad individual games.
 
----
+
 
 ## Defining an Eligible Player
 
@@ -533,7 +541,7 @@ These **1,000 player-seasons** form the main performance dataset.
 > [!IMPORTANT]
 > **Key Finding:** The 900-minute rule helps make performance comparisons more reliable. Players with very limited playing time are removed so that a small number of matches does not have too much influence.
 
----
+
 
 ## Keeping Performance Independent from the Card Market
 
@@ -564,7 +572,7 @@ This connects directly to the main idea of the project:
 > [!IMPORTANT]
 > **Key Finding:** Football performance is measured independently from the card market. This helps avoid using card prices to influence how player performance is defined.
 
----
+
 
 ## Assigning Players to Analysis Roles
 
@@ -575,7 +583,7 @@ A striker should not be directly compared with a goalkeeper, and a center-back s
 To make comparisons fairer, eligible player-seasons are grouped into seven roles:
 
 | FotMob Position | Analysis Role |
-|---|---|
+|||
 | Keeper | Goalkeeper |
 | Center Back | Centre-back |
 | Left Back, Right Back, Wing-Back | Full-back / Wing-back |
@@ -609,13 +617,13 @@ Across three seasons and seven roles, the analysis creates **21 peer groups**.
 > [!IMPORTANT]
 > **Key Finding:** Player performance is evaluated against players with similar roles in the same season. This creates a fairer comparison than ranking every Premier League player together.
 
----
+
 
 ## Do FotMob Ratings Behave Similarly Across Football Roles?
 
 Before creating performance rankings, we first need to know whether FotMob Ratings behave the same way across different positions.
 
-![Distribution of FotMob Season Rating by Football Role](figures/q2_3_fotmob_rating_distribution_by_role.png)
+![Distribution of FotMob Season Rating by Football Role](figures/figure10.png)
 
 *Figure 7.1. Distribution of season-level FotMob Ratings across the seven analysis roles. Only player-seasons with at least 900 minutes are included.*
 
@@ -661,7 +669,7 @@ The project therefore asks:
 
 > **How well did this player perform compared with players in the same role and season?**
 
----
+
 
 ## Are Stronger Football Performers More Likely to Appear on eBay?
 
@@ -671,7 +679,7 @@ The first question is:
 
 > **Are better-performing players more likely to appear in the observed eBay listings?**
 
-![eBay Market Presence by Football Performance](figures/q3_ebay_presence_by_performance_band.png)
+![eBay Market Presence by Football Performance](figures/figure11.png)
 
 *Figure 7.2. Percentage of eligible players represented in at least one observed eBay listing, grouped by their latest eligible Season × Role performance percentile.*
 
@@ -680,7 +688,7 @@ The first question is:
 Players are divided into four performance groups:
 
 | Performance Band | Players Represented | eBay Presence |
-|---|---:|---:|
+||:|:|
 | 0–25th percentile | 101 of 197 | **51.3%** |
 | 25–50th percentile | 91 of 151 | **60.3%** |
 | 50–75th percentile | 74 of 105 | **70.5%** |
@@ -713,7 +721,7 @@ This leads to a more important question:
 
 > **If we compare similar cards, do better-performing players actually have higher selling prices?**
 
----
+
 
 ## Within Comparable Cards, Does Player Performance Relate to selling price?
 
@@ -738,7 +746,7 @@ This produces:
 
 For each player, the **median selling price** is used as the market value.
 
-![Football Performance and selling price Within Comparable Cards](figures/q43_comparable_cards_performance_vs_price.png)
+![Football Performance and selling price Within Comparable Cards](figures/figure12.png)
 
 *Figure 7.3. Player-level median selling prices across performance groups within comparable 2023 Panini Prizm cards.*
 
@@ -747,7 +755,7 @@ For each player, the **median selling price** is used as the market value.
 Players are again divided into four performance groups.
 
 | Performance Band | Players | Median selling price |
-|---|---:|---:|
+||:|:|
 | 0–25th percentile | 50 | **$40.80** |
 | 25–50th percentile | 46 | **$41.30** |
 | 50–75th percentile | 46 | **$44.20** |
@@ -786,7 +794,7 @@ This means we need to look at other factors that may influence the market.
 
 One possible factor is the player's **club**.
 
----
+
 
 ## After Controlling for Performance and Card Characteristics, Does Club Still Relate to selling price?
 
@@ -806,7 +814,7 @@ This analysis therefore controls for:
 
 Each player is then represented once using their adjusted selling price.
 
-![Adjusted Player selling price by Premier League Club](figures/q44_adjusted_club_price_distribution_colored.png)
+![Adjusted Player selling price by Premier League Club](figures/figure13.png)
 
 *Figure 7.4. Adjusted player asking-price distributions across Premier League clubs after accounting for observable card characteristics, football performance, and football role.*
 
@@ -855,7 +863,7 @@ This suggests an important lesson:
 
 Player reputation, club visibility, popularity, collector interest, and other market factors may also influence how cards are priced.
 
----
+
 
 ## Overall Player Performance Insight
 

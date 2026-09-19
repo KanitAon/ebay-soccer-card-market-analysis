@@ -182,7 +182,7 @@ Prizm dominates Panini's listing volume and is also the most frequently observed
 > [!IMPORTANT]
 > **Key Finding:** Panini has more listings overall in the product lines shown, while **Prizm and Chrome are the main entry points** for understanding each brand's market.
 
-## What Affects Soccer Card Selling Prices?
+# What Affects Soccer Card Selling Prices
 
 After understanding the overall eBay market, the next step is to explore **why some cards are priced higher than others**.
 
@@ -197,9 +197,9 @@ The goal is to understand **which card characteristics are associated with highe
 
 > **For Newcomers:** A card is not expensive because of only one feature. The best comparison is usually with cards that have a similar **player, product line, grading status, rarity, and card type**.
 
-### Card Features Affect selling price
+## Card Features Affect selling price
 
-#### **Do special card features make cards more expensive?**
+### **Do special card features make cards more expensive?**
 
 This analysis compares four card types:
 
@@ -242,7 +242,7 @@ The strongest difference appears in **Autograph + Patch cards**, which are signi
 > [!IMPORTANT]
 > **Key Finding:** Cards with both an **autograph and patch** show the strongest price premium in this dataset. However, **special features do not always mean a higher price**. For example, **Patch Only** cards have a median price of about **$44**, which is very close to standard cards without an autograph or patch.
 
-#### **Does Brand Matter for the Same Card Type?**
+### **Does Brand Matter for the Same Card Type?**
 
 After looking at autograph and patch features, the next question is:
 
@@ -277,7 +277,7 @@ Because card prices are highly skewed, these averages should still be read toget
 > [!IMPORTANT]
 > **Key Finding:** Brand does not affect every card type in the same way. The strongest Panini–Topps price gap appears among cards with **no autograph or patch**, while autograph and patch cards have much closer average prices. For newcomers, this means **do not assume one brand is always more expensive — compare the same card type across brands before buying**.
 
-### Grading Affect selling price
+## Grading Affect selling price
 
 Before comparing prices, it is useful to understand what **card grading** means.
 
@@ -317,7 +317,7 @@ However, grading itself is not the only possible reason for the higher price. Gr
 > [!IMPORTANT]
 > **Key Finding:** Graded cards have a much higher average selling price than ungraded cards in the matched sample. For newcomers, grading can be an important price factor, but always check the **grade, grading company, card rarity, and comparable listings** before assuming that every graded card is worth more.check the **grade, grading company, card rarity, and comparable listings** before assuming that every graded card is worth more.
 
-### Rookie Status Affect Selling Price
+## Rookie Status Affect Selling Price
 
 A **rookie card** is a card connected to a player's early professional career or first major card releases. Rookie cards often receive special attention from collectors because they represent an early stage of a player's career.
 
@@ -355,7 +355,7 @@ Since both p-values are above **0.05**, there is not enough evidence to conclude
 > [!IMPORTANT]
 > **Key Finding:** A **rookie label does not automatically mean a higher selling price**. In this matched sample, rookie cards are actually priced lower on average, but the difference is not statistically significant. For newcomers, rookie status should be considered together with **rarity, product line, autograph, grading, and comparable listings** rather than used as a price signal by itself.
 
-### How Product Tier Relates to Card selling price
+## How Product Tier Relates to Card selling price
 
 Before comparing individual card prices, it is useful to understand the **price of the box they come from**.
 
@@ -373,7 +373,7 @@ The box price is the **cost of entering the product**, while the card selling pr
 
 ---
 
-### Average selling price by Product Tier
+## Average selling price by Product Tier
 
 <p align="center">
   <img src="figure/figure_09.png"
@@ -471,7 +471,7 @@ The goal of this section is therefore to build a **fair and independent measure 
 
 ---
 
-## 7.1 From Match Ratings to Season Performance
+## From Match Ratings to Season Performance
 
 One good match does not tell us how good a player was across an entire season.
 
@@ -506,7 +506,7 @@ This gives us a more stable view of player performance than using individual mat
 
 ---
 
-## 7.2 Defining an Eligible Player
+## Defining an Eligible Player
 
 Not every player-season contains enough playing time to make a reliable comparison.
 
@@ -533,7 +533,7 @@ These **1,000 player-seasons** form the main performance dataset.
 
 ---
 
-## 7.3 Keeping Performance Independent from the Card Market
+## Keeping Performance Independent from the Card Market
 
 An important part of this project is keeping **football performance separate from card-market information**.
 
@@ -564,7 +564,7 @@ This connects directly to the main idea of the project:
 
 ---
 
-## 7.4 Assigning Players to Analysis Roles
+## Assigning Players to Analysis Roles
 
 Different football positions have very different responsibilities.
 
@@ -609,7 +609,7 @@ Across three seasons and seven roles, the analysis creates **21 peer groups**.
 
 ---
 
-## 7.5 Do FotMob Ratings Behave Similarly Across Football Roles?
+## Do FotMob Ratings Behave Similarly Across Football Roles?
 
 Before creating performance rankings, we first need to know whether FotMob Ratings behave the same way across different positions.
 
@@ -661,7 +661,7 @@ The project therefore asks:
 
 ---
 
-## 7.6 Are Stronger Football Performers More Likely to Appear on eBay?
+## Are Stronger Football Performers More Likely to Appear on eBay?
 
 Now that we have a fair performance measure, we can begin connecting football performance with the card market.
 
@@ -713,7 +713,7 @@ This leads to a more important question:
 
 ---
 
-## 7.7 Within Comparable Cards, Does Player Performance Relate to selling price?
+## Within Comparable Cards, Does Player Performance Relate to selling price?
 
 Simply comparing all cards would not be fair.
 
@@ -786,7 +786,7 @@ One possible factor is the player's **club**.
 
 ---
 
-## 7.8 After Controlling for Performance and Card Characteristics, Does Club Still Relate to selling price?
+## After Controlling for Performance and Card Characteristics, Does Club Still Relate to selling price?
 
 Players from different clubs may receive different levels of attention from collectors.
 

@@ -29,7 +29,7 @@ Each row represents one unique eBay listing after duplicate listings are removed
 
 The notebook used to collect and prepare the eBay data is available here:
 
-[View Source Code](../../src/data_collection/eBay_Market_Data.ipynb)
+[View Source Code](https://github.com/KanitAon/ebay-soccer-card-market-analysis/blob/main/src/data_collection/eBay_Market_Data.ipynb)
 
 ---
 

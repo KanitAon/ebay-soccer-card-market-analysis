@@ -73,9 +73,7 @@ Together, these views show **where most listings are found, which players have t
        width="900">
 </p>
 
-<p align="center">
-  <b>Figure 1.</b> Distribution of seller selling prices for 7,248 single-player soccer card listings. The x-axis shows price ranges in USD, while the y-axis shows the percentage of listings in each range.
-</p>
+*Figure 1: Distribution of seller selling prices for 7,248 single-player soccer card listings. The x-axis shows price ranges in USD, while the y-axis shows the percentage of listings in each range.*
 
 The graph shows that most soccer card listings are concentrated in the lower price ranges.
 
@@ -107,9 +105,8 @@ Some players appear hundreds of times, while many players appear only a few time
        width="900">
 </p>
 
-<p align="center">
-  <b>Figure 2.</b> Cumulative share of eBay listings across 443 players, ranked from the highest to lowest listing volume.
-</p>
+
+  *Figure 2: Cumulative share of eBay listings across 443 players, ranked from the highest to lowest listing volume.*
 
 The graph shows that listings are highly concentrated among a relatively small group of players.
 
@@ -625,7 +622,7 @@ Before creating performance rankings, we first need to know whether FotMob Ratin
 
 ![Distribution of FotMob Season Rating by Football Role](figure/figure10.png)
 
-*Figure 7.1. Distribution of season-level FotMob Ratings across the seven analysis roles. Only player-seasons with at least 900 minutes are included.*
+*Figure 10. Distribution of season-level FotMob Ratings across the seven analysis roles. Only player-seasons with at least 900 minutes are included.*
 
 ### How to Read the Graph
 
@@ -681,7 +678,7 @@ The first question is:
 
 ![eBay Market Presence by Football Performance](figure/figure11.png)
 
-*Figure 7.2. Percentage of eligible players represented in at least one observed eBay listing, grouped by their latest eligible Season × Role performance percentile.*
+*Figure 11. Percentage of eligible players represented in at least one observed eBay listing, grouped by their latest eligible Season × Role performance percentile.*
 
 ### How to Read the Graph
 
@@ -748,7 +745,7 @@ For each player, the **median selling price** is used as the market value.
 
 ![Football Performance and selling price Within Comparable Cards](figure/figure12.png)
 
-*Figure 7.3. Player-level median selling prices across performance groups within comparable 2023 Panini Prizm cards.*
+*Figure 12. Player-level median selling prices across performance groups within comparable 2023 Panini Prizm cards.*
 
 ### How to Read the Graph
 
@@ -816,7 +813,7 @@ Each player is then represented once using their adjusted selling price.
 
 ![Adjusted Player selling price by Premier League Club](figure/figure13.png)
 
-*Figure 7.4. Adjusted player asking-price distributions across Premier League clubs after accounting for observable card characteristics, football performance, and football role.*
+*Figure 13. Adjusted player asking-price distributions across Premier League clubs after accounting for observable card characteristics, football performance, and football role.*
 
 ### How to Read the Graph
 

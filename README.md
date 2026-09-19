@@ -37,7 +37,7 @@ This project uses three main datasets:
 1. **eBay Market Data**  
    Historical soccer card market data collected from **eBay Marketplace Insights**.  
    The dataset includes card information, listing details, and market prices.  
-    [View Metadata](https://github.com/KanitAon/ebay-soccer-card-market-analysis/blob/main/metadata/metadata_eBay-Market-Data.md)
+    [View Metadata](https://github.com/KanitAon/ebay-soccer-card-market-analysis/blob/main/metadata/metadata_eBay-Market.md)
 
 2. **Player Match Statistics**  
    Match-level player performance data collected from **FotMob**.  
@@ -47,7 +47,7 @@ This project uses three main datasets:
 3. **Player Profiles**  
    Player profile data collected from **FotMob**.  
    The dataset includes player information such as name, position, team, nationality, and other profile details.  
-   [View Metadata](LINK_TO_PLAYER_PROFILE_METADATA)
+   [View Metadata](https://github.com/KanitAon/ebay-soccer-card-market-analysis/blob/main/metadata/metadata_Player_Profiles.md)
 
 ## Market Distribution Overview
 

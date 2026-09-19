@@ -133,4 +133,43 @@ He is followed by:
 The large differences between players show that some player markets have much more available data than others.
 
 > [!IMPORTANT]
-> **Key Finding for Newcomers:** Be more careful when comparing players with very different listing counts. A price based on many listings gives a stronger picture of the observed market than a price based on only a few cards.
+> **Key Finding:** Be more careful when comparing players with very different listing counts. A price based on many listings gives a stronger picture of the observed market than a price based on only a few cards.
+
+### Brand and Product Line Market Overview
+
+The next step is to understand how the market is divided between **Topps and Panini**, and which product lines appear most often.
+
+<p align="center">
+  <img src="figure/figure_04.png"
+       alt="Listing Volume by Product Line"
+       width="900">
+</p>
+
+<p align="center">
+  <b>Figure 4.</b> Top product lines by observed listing volume for Topps and Panini. Both charts use the same scale to make the brands easier to compare.
+</p>
+
+
+Among the top 10 product lines shown in Figure 4:
+
+Panini therefore represents about **56%** of the listings shown, compared with about **44% for Topps**.
+This suggests that **Panini has a larger listing presence** in the observed sample.
+
+For **Topps**, the market is mainly concentrated in:
+
+- **Chrome — 1,139 listings**
+- **Finest — 547 listings**
+- **Merlin — 439 listings**
+
+Chrome is clearly the most common Topps product line in the sample.
+
+For **Panini**, the main product lines are:
+
+- **Prizm — 1,807 listings**
+- **Select — 611 listings**
+- **Obsidian — 393 listings**
+
+Prizm dominates Panini's listing volume and is also the most frequently observed product line across both brands.
+
+> [!IMPORTANT]
+> **Key Finding:** Panini has more listings overall in the product lines shown, while **Prizm and Chrome are the main entry points** for understanding each brand's market.

@@ -29,14 +29,13 @@ Each row represents one unique eBay listing after duplicate listings are removed
 
 The notebook used to collect and prepare the eBay data is available here:
 
-[View Source Code](../../src/data_collection%26processing/get_ebay_data.ipynb)
+[View Source Code](../../src/data_collection/eBay_Market_Data.ipynb)
 
 ---
 
 ## What This Dataset Represents
 
 This dataset is useful for understanding the **current soccer card market on eBay**.
-
 It can help answer questions such as:
 
 - What card products are commonly listed?

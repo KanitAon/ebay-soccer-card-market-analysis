@@ -1,110 +1,79 @@
-## Seller Asking-Price Market Distribution
+### Card Features Affect Asking Price
 
-Before comparing players or card brands, we first need to understand one simple question:
+#### **Do special card features make cards more expensive?**
 
-> **How much do soccer cards on eBay usually cost?**
+This analysis compares four card types:
 
-The chart below shows the asking-price distribution of **7,248 single-player soccer card listings**.
+- No Autograph / Patch
+- Autograph Only
+- Patch Only
+- Autograph + Patch
 
-### What Does the Market Look Like?
+<p align="center">
+  <img src="figure/figure_05.png"
+       alt="Average Asking Price by Card Type"
+       width="900">
+</p>
 
-The first thing that stands out is that most listings are concentrated in the lower price ranges.
+<p align="center">
+  <b>Figure 5.</b> Average asking price by card type. The labels also show the number of observed listings in each group.
+</p>
 
-- **24.2%** are listed below **$25**
-- **30.7%** are listed between **$25–49**
-- **19.5%** are listed between **$50–99**
+The graph shows that cards with both an **autograph and patch** have the highest average asking price at about **$271**, followed by **autograph-only cards at $236**.
 
-Together:
+Standard cards without an autograph or patch average about **$175**, while **patch-only cards average $146**.
 
-> **74.4% of listings are priced below $100.**
+However, average prices can be affected by a small number of very expensive listings. The median prices are much closer:
 
-In other words, nearly **3 out of every 4 cards** in this dataset are listed for less than $100.
+| Card Type | Listings | Average Price | Median Price |
+|---|---:|---:|---:|
+| No Autograph / Patch | 5,784 | $174.75 | $44.99 |
+| Autograph Only | 1,125 | $235.87 | $48.00 |
+| Patch Only | 90 | $145.88 | $44.00 |
+| Autograph + Patch | 249 | $271.11 | $64.99 |
 
-The largest price group is **$25–49**, representing **30.7% of all listings**.
+The statistical results support an important point.
 
-This suggests that the eBay soccer card market is not mainly made up of cards worth hundreds or thousands of dollars. Most listings are in much more accessible price ranges.
+The difference in **average prices** is not statistically significant using Welch's ANOVA (`p = 0.106`), partly because prices vary widely and include extreme values.
 
----
+However, the overall **price distributions are significantly different** using the Kruskal–Wallis test (`p < 0.001`).
 
-### What Happens Above $100?
+The strongest difference appears in **Autograph + Patch cards**, which are significantly different from the other card groups in the pairwise comparisons.
 
-Once prices move above $100, the number of listings drops quickly.
+> [!IMPORTANT]
+> **Key Finding:** Cards with both an **autograph and patch** show the strongest price premium in this dataset. However, **special features do not always mean a higher price**. For example, **Patch Only** cards have a median price of about **$44**, which is very close to standard cards without an autograph or patch.
 
-Only:
+#### Does Brand Matter for the Same Card Type?
 
-- **15.4%** are between **$100–249**
-- **5.6%** are between **$250–499**
-- **2.3%** are between **$500–999**
-- **2.4%** are **$1,000 or more**
+After looking at autograph and patch features, the next question is:
 
-So cards priced in the hundreds or thousands of dollars are only a small part of the observed market.
+> **For the same card type, do Panini and Topps have different asking prices?**
 
-> **Higher-priced cards attract attention, but they are not representative of most eBay listings.**
+<p align="center">
+  <img src="figure/figure_06.png"
+       alt="Average Asking Price by Card Type: Panini vs Topps"
+       width="900">
+</p>
 
----
+<p align="center">
+  <b>Figure 6.</b> Average asking prices for Panini and Topps across four card types: standard cards, autograph cards, patch cards, and autograph + patch cards.
+</p>
 
-### A $187 Average Does Not Mean a Typical Card Costs $187
+The graph shows that the difference between **Panini and Topps depends on the card type**.
 
-This becomes even more interesting when we compare the **mean and median asking prices**.
+The largest gap appears in cards with **no autograph or patch**. Panini averages about **$263**, compared with only **$72 for Topps**. This is also the only category where the difference in average price is statistically significant (`p < 0.001`).
 
-| Measure | Asking Price |
-|---|---:|
-| Mean | $187.19 |
-| **Median** | **$45.00** |
-| 25th Percentile | $25.09 |
-| 75th Percentile | $100.00 |
-| 95th Percentile | $493.25 |
-| 99th Percentile | $2,500.00 |
-| Maximum | $57,500.00 |
+For cards with special features, the two brands are much closer:
 
-The average asking price is about **$187**, but half of all listings are priced at **$45 or less**.
+- **Autograph Only:** Panini $237 vs. Topps $235
+- **Patch Only:** Panini $168 vs. Topps $128
+- **Autograph + Patch:** Panini $279 vs. Topps $249
 
-Why is the difference so large?
+The average-price differences in these three groups are **not statistically significant**.
 
-Because a small number of extremely expensive listings pull the average upward.
+This suggests that once a card includes features such as an **autograph or patch**, the feature itself may become more important to asking price than the brand alone.
 
-The most expensive listing in the dataset is **$57,500**, while the typical listing is much closer to **$45**.
+Because card prices are highly skewed, these averages should still be read together with median prices and comparable listings.
 
-This creates a **right-skewed market**:
-
-**Many lower-priced cards → fewer expensive cards → very few extreme-price cards**
-
-Because of this pattern, the **median price** gives a better picture of a typical eBay listing than the mean.
-
----
-
-## Key Finding for Newcomers
-
-> ### Most soccer cards in this dataset are much more affordable than the average price suggests.
-
-For a newcomer, there are three useful lessons from this graph:
-
-1. **Below $100 is the main market.**  
-   About **74% of listings** are found in this range.
-
-2. **Do not judge the market by the average price alone.**  
-   The mean is **$187**, but the median is only **$45** because a few very expensive cards push the average higher.
-
-3. **Compare a card with similar cards before deciding whether it is expensive.**  
-   A $200 card may be expensive for a standard base card but normal for a rare autograph, numbered parallel, graded card, or premium product.
-
----
-
-### The Next Question
-
-The graph shows that soccer card prices vary dramatically.
-
-But **why** can one card cost $30 while another costs $500 or even several thousand dollars?
-
-Possible reasons include:
-
-- Product line
-- Serial number and rarity
-- Rookie status
-- Autograph
-- Patch or relic
-- Professional grading
-- Card grade
-- Player popularity
-
-> **Before comparing player performance with card value, the next step is to understand how the characteristics of the card itself affect asking prices.**
+> [!IMPORTANT]
+> **Key Finding:** Brand does not affect every card type in the same way. The strongest Panini–Topps price gap appears among cards with **no autograph or patch**, while autograph and patch cards have much closer average prices. For newcomers, this means **do not assume one brand is always more expensive — compare the same card type across brands before buying**.

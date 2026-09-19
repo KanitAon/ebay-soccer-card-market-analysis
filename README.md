@@ -623,7 +623,7 @@ Across three seasons and seven roles, the analysis creates **21 peer groups**.
 
 Before creating performance rankings, we first need to know whether FotMob Ratings behave the same way across different positions.
 
-![Distribution of FotMob Season Rating by Football Role](figures/figure10.png)
+![Distribution of FotMob Season Rating by Football Role](figure/figure10.png)
 
 *Figure 7.1. Distribution of season-level FotMob Ratings across the seven analysis roles. Only player-seasons with at least 900 minutes are included.*
 
@@ -679,7 +679,7 @@ The first question is:
 
 > **Are better-performing players more likely to appear in the observed eBay listings?**
 
-![eBay Market Presence by Football Performance](figures/figure11.png)
+![eBay Market Presence by Football Performance](figure/figure11.png)
 
 *Figure 7.2. Percentage of eligible players represented in at least one observed eBay listing, grouped by their latest eligible Season × Role performance percentile.*
 
@@ -746,7 +746,7 @@ This produces:
 
 For each player, the **median selling price** is used as the market value.
 
-![Football Performance and selling price Within Comparable Cards](figures/figure12.png)
+![Football Performance and selling price Within Comparable Cards](figure/figure12.png)
 
 *Figure 7.3. Player-level median selling prices across performance groups within comparable 2023 Panini Prizm cards.*
 
@@ -814,7 +814,7 @@ This analysis therefore controls for:
 
 Each player is then represented once using their adjusted selling price.
 
-![Adjusted Player selling price by Premier League Club](figures/figure13.png)
+![Adjusted Player selling price by Premier League Club](figure/figure13.png)
 
 *Figure 7.4. Adjusted player asking-price distributions across Premier League clubs after accounting for observable card characteristics, football performance, and football role.*
 

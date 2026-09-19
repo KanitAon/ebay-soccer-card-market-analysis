@@ -24,7 +24,7 @@ The provided dataset contains:
 
 The notebook used to collect, transform, validate, and export the dataset is:
 
-[View Source Code](https://github.com/KanitAon/ebay-soccer-card-market-analysis/blob/main/src/data_collection/FotMob_API_Player_Match_Statistics_to_XLSX_Colab.ipynb)
+[View Source Code](https://github.com/KanitAon/ebay-soccer-card-market-analysis/blob/main/src/data_collection/Player_Match_Statistics_Data.ipynb)
 
 The notebook does not require previously downloaded FotMob JSON files. It requests the data directly from FotMob when it runs.
 

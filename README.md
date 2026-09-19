@@ -481,13 +481,15 @@ For this reason, match ratings are combined into a **season-level rating** for e
 
 The analysis uses the average FotMob Rating across the player's rated appearances:
 
+
 $$
-\text{Season Rating}_{i,s}
-=
-\frac{1}{N_{i,s}}
-\sum_{m=1}^{N_{i,s}}
-\text{Rating}_{i,s,m}
+\text{Season Rating}_{i,s} = \frac{1}{N_{i,s}} \sum_{m=1}^{N_{i,s}} \text{Rating}_{i,s,m}
 $$
+
+where:
+
+- $N_{i,s}$ = number of rated match appearances for player $i$ during season $s$
+- $\text{Rating}_{i,s,m}$ = FotMob rating received by player $i$ in match $m$
 
 The unit of analysis therefore becomes:
 

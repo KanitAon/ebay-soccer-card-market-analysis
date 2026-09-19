@@ -49,7 +49,18 @@ This project uses three main datasets:
    The dataset includes player information such as name, position, team, nationality, and other profile details.  
    [View Metadata](LINK_TO_PLAYER_PROFILE_METADATA)
 
-## 
+## Market Distribution Overview
+
+Before comparing card prices or player performance, we first need to understand what the eBay soccer card market looks like.
+
+This section looks at the market from four views:
+
+- **Seller Asking-Price Market Distribution** — Understand the typical price range of soccer card listings and how prices are distributed.
+- **How Concentrated Is the Player Market** — See whether listings are spread across many players or concentrated among a smaller group.
+- **Which Players Appear Most Often** — Identify the players with the highest listing volume and the most available market information.
+- **Brand and Product Line Distribution** — Compare how listings are distributed across **Topps, Panini, and their major product lines**.
+
+Together, these views show **where most listings are found, which players have the most market coverage, and which brands and products are most visible on eBay**.
 
 ### Seller Asking-Price Market Distribution
 
@@ -76,7 +87,7 @@ For this reason, the **median price** is more useful when trying to understand w
 > [!IMPORTANT]
 > **Key Finding:** Most soccer cards in this dataset are priced below $100. For newcomers, the **median price and similar listings** are better reference points than the overall average because a small number of very expensive cards can make the market look more expensive than it really is.
 
-## Player Market Distribution
+### Player Market Distribution
 
 The dataset contains **7,248 listings from 443 players**, but the listings are not evenly distributed across players.
 
@@ -85,7 +96,7 @@ Some players appear hundreds of times, while many players appear only a few time
 > Listing volume shows **market representation**, not buyer demand.  
 > A player with more listings may simply have more cards available, more product releases, or more seller activity.
 
-### How Concentrated Is the Market?
+How Concentrated Is the Market?
 
 <p align="center">
   <img src="figure/figure_02.png"
@@ -108,9 +119,7 @@ This means that the eBay sample is dominated by a smaller group of highly repres
 > [!IMPORTANT]
 > **Key Finding:** A large number of listings does not mean a player has stronger demand. It means there is **more market information available** for that player.
 
----
-
-### Which Players Appear Most Often?
+Which Players Appear Most Often?
 
 <p align="center">
   <img src="figure/figure_03.png"

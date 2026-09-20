@@ -458,7 +458,7 @@ Because of this very small sample, the Dynasty average should **not be treated a
 
 ---
 
-## How Relation Between Player Performance and Card Sell Price 
+## 🤔How Relation Between Player Performance and Card Sell Price 
 
 
 The FotMob dataset is recorded at the match level:

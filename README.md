@@ -1038,50 +1038,109 @@ Each player is then represented once using their adjusted selling price.
 
 **💡How to Read the Graph**
 
+The graph compares **adjusted player asking prices across Premier League clubs** after accounting for observed card characteristics, football performance, and football role.
+
 For each club:
 
-- The **dot** shows the median adjusted player selling price
-- The horizontal line shows the middle 50% of player prices
-- `n` shows the number of players
-- The dashed line shows the overall market median
+- The **dot** represents the median adjusted asking price
+- The **horizontal line** represents the middle 50% of adjusted player prices
+- `n` shows the number of players represented
+- The **dashed vertical line** represents the overall median adjusted asking price
 
-Even after adjustment, differences remain between clubs.
+Even after these adjustments, visible differences remain between clubs.
 
-The highest median adjusted prices include:
+For example, the highest median adjusted asking prices include:
 
-- **Arsenal:** about **$79**
-- **Tottenham Hotspur:** about **$63**
-- **Manchester United:** about **$62**
+- **Arsenal:** approximately **$79**
+- **Tottenham Hotspur:** approximately **$63**
+- **Manchester United:** approximately **$62**
 
 At the lower end:
 
-- **Fulham:** about **$42**
-- **Crystal Palace:** about **$42**
+- **Fulham:** approximately **$42**
+- **Crystal Palace:** approximately **$42**
 
-There is still substantial overlap between clubs, so club does not determine the price of every individual player.
+However, the price ranges still overlap substantially across clubs.
 
-However, adding club to the pricing model increases explanatory power by:
+This means that **club does not determine the asking price of an individual player's card**. Players from the same club can still have very different adjusted prices, and players from different clubs can have similar prices.
 
-**ΔR² = 0.081**
+---
 
-or about **8.1 percentage points**.
+### Does Club Add Information Beyond Performance?
 
-The joint statistical test gives:
+To test whether club contributes additional information after controlling for the observed card and football characteristics, two models are compared:
 
-**p = 1.49 × 10⁻⁶**
+$$
+\text{Reduced Model} =
+\text{Card Characteristics}
++
+\text{Performance}
++
+\text{Role}
+$$
 
-This provides strong evidence that club still contains market information after accounting for the observed card and football characteristics.
+and
+
+$$
+\text{Full Model} =
+\text{Card Characteristics}
++
+\text{Performance}
++
+\text{Role}
++
+\text{Club}
+$$
+
+Adding club increases the model's explanatory power by:
+
+$$
+\Delta R^2 = 0.081
+$$
+
+or approximately **8.1 percentage points of additional in-sample explained variation**.
+
+A joint statistical test is then used to test whether the club terms, considered together, contribute additional information to the model.
+
+The hypotheses are:
+
+$$
+H_0:
+\text{After adjustment, the club terms jointly add no explanatory information}
+$$
+
+$$
+H_1:
+\text{At least some club-related information remains after adjustment}
+$$
+
+The result is:
+
+$$
+p = 1.49 \times 10^{-6}
+$$
+
+Because the p-value is very small, the null hypothesis is rejected.
+
+This provides strong evidence that **club identity remains associated with asking price even after accounting for the observed card characteristics, football performance, and football role**.
+
+Importantly, this does **not** mean that every club differs significantly from every other club. The joint test only shows that club, considered as a group of variables, adds information to the pricing model.
+
+---
 
 > [!IMPORTANT]
-> **Key Finding:** Club remains associated with card selling prices even after accounting for card characteristics, football performance, and football role. Adding club improves the model's explanatory power by about **8.1 percentage points**.
+> **Key Finding:** Club identity adds meaningful explanatory information beyond observed football performance, football role, and card characteristics.
+>
+> Adding club increases the model's in-sample explanatory power by approximately **8.1 percentage points**, and the joint club test provides strong statistical evidence that this additional information is not negligible.
 
-This suggests an important lesson:
+This result strengthens the project's *Moneyball* interpretation:
 
 > [!IMPORTANT]
-> **The soccer card market values more than football performance alone.**
+> **On-field performance is only one part of how the observed football-card market assigns asking prices.**
 
-Player reputation, club visibility, popularity, collector interest, and other market factors may also influence how cards are priced.
+The remaining differences may reflect market-related factors associated with players and clubs, such as **visibility, reputation, popularity, collector interest, or other unobserved characteristics**.
 
+These results describe **associations**, not causal effects. The analysis does not establish that belonging to a particular club directly causes a player's card to receive a higher asking price.
 
 
 ## Overall Player Performance Insight

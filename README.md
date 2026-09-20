@@ -742,6 +742,7 @@ For example, a **7.0 rating** may be well above average for a striker but much c
 
 Therefore:
 
+> [!NOTE]
 > **Same Raw Rating ≠ Same Relative Performance**
 
 To solve this problem, each player is ranked within their:

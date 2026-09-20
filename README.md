@@ -966,7 +966,7 @@ Each player is then represented once using their adjusted selling price.
 
 *Figure 13. Adjusted player asking-price distributions across Premier League clubs after accounting for observable card characteristics, football performance, and football role.*
 
-### How to Read the Graph
+How to Read the Graph
 
 For each club:
 

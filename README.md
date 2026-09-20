@@ -67,12 +67,14 @@ Together, these views show **where most listings are found, which players have t
 
 ## Seller Asking-Price Market Distribution
 
-*Figure 1: Distribution of seller selling prices for 7,248 single-player soccer card listings. The x-axis shows price ranges in USD, while the y-axis shows the percentage of listings in each range.*
+
 <p align="center">
   <img src="figure/figure_01.png"
        alt="Seller Asking-Price Market Distribution"
        width="900">
 </p>
+
+*Figure 1: Seller Asking Price Distribution shows the percentage of listings in each price range. Taller bars mean more cards are listed within that price range.*
 
 The graph shows that most soccer card listings are concentrated in the lower price ranges.
 
@@ -98,12 +100,14 @@ Some players appear hundreds of times, while many players appear only a few time
 
 ### How Concentrated Is the Market
 
-*Figure 2: Cumulative share of eBay listings across 443 players, ranked from the highest to lowest listing volume.*
 <p align="center">
   <img src="figure/figure_02.png"
        alt="Cumulative Concentration of Listings Across Players"
        width="900">
 </p>
+
+*Figure 2: Listing Concentration Across Players shows how much of the market is represented by the most-listed players. A steeper curve means listings are concentrated among fewer players.*
+
 
 The graph shows that listings are highly concentrated among a relatively small group of players.
 
@@ -118,13 +122,15 @@ This means that the eBay sample is dominated by a smaller group of highly repres
 
 ### Which Players Appear Most Often
 
-*Figure 3: Players with the highest number of observed listings in the eBay sample.*
+
 
 <p align="center">
   <img src="figure/figure_03.png"
        alt="Players with the Highest Listing Volume"
        width="900">
 </p>
+
+*Figure 3: Players with the Highest Listing Volume shows the number of listings for each player. Longer bars mean that player has more cards available in the observed market.*
 
 **Erling Haaland** has the largest listing volume with **489 listings**, or about **6.8% of the full dataset**.
 
@@ -143,13 +149,13 @@ The large differences between players show that some player markets have much mo
 
 The next step is to understand how the market is divided between **Topps and Panini**, and which product lines appear most often.
 
-*Figure 4: Top product lines by observed listing volume for Topps and Panini. Both charts use the same scale to make the brands easier to compare.*
-
 <p align="center">
   <img src="figure/figure_04.png"
        alt="Listing Volume by Product Line"
        width="900">
 </p>
+
+*Figure 4: Listing Volume by Box Set shows the most frequently listed Panini and Topps box sets. Taller bars mean the box set appears more often in the dataset.*
 
 Among the top 10 product lines shown in Figure 4:
 
@@ -203,13 +209,13 @@ This analysis compares four card types:
 - Patch Only
 - Autograph + Patch
 
-*Figure 5: Average selling price by card type. The labels also show the number of observed listings in each group.*
-
 <p align="center">
   <img src="figure/figure_05.png"
        alt="Average selling price by Card Type"
        width="900">
 </p>
+
+*Figure 5: Average Asking Price by Card Type compares the average asking price of different card features. Longer bars indicate higher average prices.*
 
 The graph shows that cards with both an **autograph and patch** have the highest average selling price at about **$271**, followed by **autograph-only cards at $236**.
 
@@ -275,8 +281,6 @@ After looking at autograph and patch features, the next question is:
 
 > **For the same card type, do Panini and Topps have different selling prices?**
 
-*Figure 6: Average selling prices for Panini and Topps across four card types: standard cards, autograph cards, patch cards, and autograph + patch cards.*
-
 <p align="center">
   <img src="figure/figure_06.png"
        alt="Average selling price by Card Type: Panini vs Topps"
@@ -284,8 +288,9 @@ After looking at autograph and patch features, the next question is:
 </p>
 
 <p align="center">
-  <b>Figure 6.</b> Average selling prices for Panini and Topps across four card types: standard cards, autograph cards, patch cards, and autograph + patch cards.
-</p>
+
+*Figure 6: Card Type Price: Panini vs Topps compares average prices for the same card type across Panini and Topps. Compare the yellow and red bars within each category.*
+
 
 The graph shows that the difference between **Panini and Topps depends on the card type**.
 
@@ -318,12 +323,14 @@ However, a graded card is not automatically more valuable. Price can still depen
 
 To better understand the effect of grading, this analysis compares graded and ungraded cards only within the **same player and same box set**.
 
-*Figure 7: Average selling price of graded and ungraded cards within 411 matched Player × Box Set groups.*
 <p align="center">
   <img src="figure/figure_07.png"
        alt="Average selling price: Graded vs Ungraded"
        width="900">
 </p>
+
+*Figure 7: Graded vs Ungraded Cards compares cards from the same player and box set. Taller bars show which group has the higher average asking price.*
+
 
 The graph shows a clear difference between graded and ungraded cards.
 
@@ -351,13 +358,14 @@ However, a card labeled as a rookie is **not automatically more expensive**. Pri
 
 To make the comparison fairer, rookie and non-rookie cards were compared only within the **same player and same box set**.
 
-*Figure 8: Average selling price of rookie and non-rookie cards within 154 matched Player × Box Set groups.*
-
 <p align="center">
   <img src="figure/figure_08.png"
        alt="Average selling price: Rookie vs Non-Rookie"
        width="900">
 </p>
+
+*Figure 8: Rookie vs Non-Rookie Cards compares rookie and non-rookie cards for the same player and box set. The bar height represents the average asking price*
+
 
 Interestingly, the graph shows that **non-rookie cards have a higher average selling price** in this sample:
 
@@ -432,13 +440,14 @@ The box price is the **cost of entering the product**, while the card selling pr
 
 ## Average selling price by Product Tier
 
-*Figure 9: Average selling price of individual cards from comparable Panini and Topps product tiers.*
-
 <p align="center">
   <img src="figure/figure_09.png"
        alt="Average selling price by Product Tier"
        width="900">
 </p>
+
+*Figure 9: Average Asking Price by Product Tier compares selected Panini and Topps box sets within Core, Mid, and Luxury tiers. Compare bars within the same tier rather than across unrelated products.*
+
 
 ### Core: Prizm vs Chrome
 

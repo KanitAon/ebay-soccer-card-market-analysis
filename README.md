@@ -779,71 +779,102 @@ The first question is:
 
 **💡How to Read the Graph**
 
-Players are divided into four performance groups:
+To make the relationship between football performance and eBay market presence easier to interpret, players are grouped into four **performance percentile bands** based on their latest eligible **Season × Role performance percentile**.
 
-<div align="center">
+> **Important:** These are fixed percentile ranges, not equal-sized quartiles.  
+> Because the percentile was originally calculated within each **Season × Role** peer group and then reduced to one latest eligible season per player, the number of players in each band is not expected to be equal.
 
-<table>
-  <thead>
-    <tr>
-      <th>Performance Band</th>
-      <th>Players Represented</th>
-      <th>eBay Presence</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0–25th percentile</td>
-      <td align="center">101 of 197</td>
-      <td align="center"><b>51.3%</b></td>
-    </tr>
-    <tr>
-      <td>25–50th percentile</td>
-      <td align="center">91 of 151</td>
-      <td align="center"><b>60.3%</b></td>
-    </tr>
-    <tr>
-      <td>50–75th percentile</td>
-      <td align="center">74 of 105</td>
-      <td align="center"><b>70.5%</b></td>
-    </tr>
-    <tr>
-      <td>75–100th percentile</td>
-      <td align="center">92 of 114</td>
-      <td align="center"><b>80.7%</b></td>
-    </tr>
-  </tbody>
-</table>
+| Performance Band | Players Represented on eBay | eBay Presence |
+|---|---:|---:|
+| 0–25th percentile | 101 of 197 | **51.3%** |
+| 25–50th percentile | 91 of 151 | **60.3%** |
+| 50–75th percentile | 74 of 105 | **70.5%** |
+| 75–100th percentile | 92 of 114 | **80.7%** |
 
-</div>
+A clear pattern appears:
 
-A clear pattern appears.
+> **As football performance increases, eBay market presence also increases.**
 
-As player performance increases, **eBay market presence also increases**.
+Only **51.3%** of players in the lowest performance band appear in at least one observed eBay listing, compared with **80.7%** of players in the highest performance band.
 
-Only **51.3%** of players in the lowest performance group appear on eBay, compared with **80.7%** of players in the highest group.
+The difference between the highest and lowest groups is:
 
-That is a difference of **29.4 percentage points**.
+$$
+80.7\% - 51.3\% = 29.4
+\text{ percentage points}
+$$
 
-The statistical test also finds a clear difference:
+This means that players in the highest performance band are substantially more likely to be represented in the observed eBay market than players in the lowest band.
 
-**Mann–Whitney U test: p = 5.69 × 10⁻⁹**
+However, the pattern is not perfect. More than half of the lowest-performing group still appears on eBay, while some players in the highest-performing group do not appear at all.
 
-The effect size is:
+This suggests that **performance matters for market visibility, but performance alone does not determine who appears in the market**.
 
-**Rank-biserial correlation = 0.293**
+---
 
-This shows a positive relationship, but it is not perfect.
+**📊Statistical Evidence**
 
-Even among the lowest-performing group, more than half of the players still appear on eBay. At the same time, some high-performing players do not appear.
+The bar chart is descriptive, so a statistical test is also used to evaluate whether the relationship is supported beyond the observed sample.
+
+The analysis compares the performance distributions of two groups:
+
+- players who appear in at least one observed eBay listing
+- players who do not appear in the observed eBay listings
+
+Because performance percentile is an ordinal measure and no normal-distribution assumption is required, the analysis uses a **Mann–Whitney U test**.
+
+The result is:
+
+$$
+U = 48{,}374.5
+$$
+
+$$
+p = 5.69 \times 10^{-9}
+$$
+
+The very small p-value provides strong evidence that the performance distributions of represented and non-represented players are different.
+
+However, the p-value tells us about the **strength of statistical evidence**, not the **size of the relationship**.
+
+For that reason, the analysis also reports the **rank-biserial correlation**:
+
+$$
+r_{rb} = 0.293
+$$
+
+This positive effect size means that players represented on eBay tend to have higher football-performance rankings than players who are not represented.
+
+An intuitive interpretation can be obtained from:
+
+$$
+P \approx \frac{1+r_{rb}}{2}
+$$
+
+so:
+
+$$
+P \approx \frac{1+0.293}{2}
+\approx 0.647
+$$
+
+This means that, when comparing one represented player with one non-represented player, the represented player has the higher performance score in roughly **65% of pairwise comparisons**.
+
+The relationship is therefore meaningful, but far from deterministic.
+
+---
 
 > [!IMPORTANT]
-> **Key Finding:** Better-performing players are more likely to appear in the observed eBay market. eBay presence rises from **51.3%** in the lowest performance group to **80.7%** in the highest group. However, performance alone does not determine market visibility.
+> **Key Finding:** Better-performing players are more likely to appear in the observed eBay market.  
+> Market presence rises from **51.3%** in the lowest performance band to **80.7%** in the highest band, while the statistical test confirms a clear positive association.
+>
+> At the same time, the effect size shows that **performance is only part of the story**.  
+> Strong performance increases market visibility, but it does not fully determine whether a player is represented on eBay.
 
-This leads to a more important question:
+This leads to the next question:
 
 > [!IMPORTANT]
-> **If we compare similar cards, do better-performing players actually have higher selling prices?**
+> If performance helps explain **who appears in the market**, does it also explain **how highly comparable cards are priced**?
 
 
 

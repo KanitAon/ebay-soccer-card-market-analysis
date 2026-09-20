@@ -907,78 +907,111 @@ For each player, the **median selling price** is used as the market value.
 
 **💡How to Read the Graph**
 
-Players are again divided into four performance groups.
+Players are grouped into four **performance percentile bands** using their latest eligible Season × Role performance percentile.
 
-<div align="center">
+| Performance Band | Players | Median Asking Price |
+|---|---:|---:|
+| 0–25th percentile | 50 | **$40.80** |
+| 25–50th percentile | 46 | **$41.30** |
+| 50–75th percentile | 46 | **$44.20** |
+| 75–100th percentile | 67 | **$50.00** |
 
-<table>
-  <thead>
-    <tr>
-      <th>Performance Band</th>
-      <th>Players</th>
-      <th>Median Selling Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0–25th percentile</td>
-      <td align="center">50</td>
-      <td align="center"><b>$40.80</b></td>
-    </tr>
-    <tr>
-      <td>25–50th percentile</td>
-      <td align="center">46</td>
-      <td align="center"><b>$41.30</b></td>
-    </tr>
-    <tr>
-      <td>50–75th percentile</td>
-      <td align="center">46</td>
-      <td align="center"><b>$44.20</b></td>
-    </tr>
-    <tr>
-      <td>75–100th percentile</td>
-      <td align="center">67</td>
-      <td align="center"><b>$50.00</b></td>
-    </tr>
-  </tbody>
-</table>
+A gradual upward pattern appears.
 
-</div>
+The median asking price rises from **$40.80** in the lowest performance band to **$50.00** in the highest-performing group.
 
-The median selling price increases gradually with player performance.
+This represents an increase of approximately:
 
-The highest-performing group has a median price of **$50**, compared with **$40.80** for the lowest group.
+$$
+\frac{50.00 - 40.80}{40.80} \times 100
+\approx 22.5\%
+$$
 
-That is about **22.5% higher**.
+However, the price distributions overlap substantially across all four groups.
 
-However, the distributions still overlap heavily.
+This means that stronger football performance is associated with somewhat higher asking prices on average, but performance does not clearly separate expensive cards from inexpensive ones.
 
-Some lower-performing players have expensive cards, while some high-performing players have relatively inexpensive cards.
+Some lower-performing players still have relatively expensive cards, while some high-performing players have comparatively inexpensive cards.
 
-The Spearman correlation confirms this:
+---
 
-**ρ = 0.180, p = 0.00898**
+**📊Statistical Evidence**
 
-The relationship is statistically significant, but **weak**.
+Because the relationship does not need to be linear and both variables can be interpreted through their relative ordering, a **Spearman rank correlation** is used to test whether higher football performance tends to correspond with higher asking prices.
 
-When the analysis is limited to players with at least three comparable listings:
+The hypotheses are:
 
-**ρ = 0.251, p = 0.0284**
+$$
+H_0:
+\text{There is no monotonic association between football performance and asking price}
+$$
 
-The relationship remains positive.
+$$
+H_1:
+\text{There is a monotonic association between football performance and asking price}
+$$
+
+For the full comparable-card sample:
+
+$$
+\rho_s = 0.180
+$$
+
+$$
+p = 0.00898
+$$
+
+The positive coefficient indicates that players with stronger football performance tend to have higher asking prices.
+
+The small p-value provides evidence that this positive association is unlikely to be explained by sampling variation alone.
+
+However, the magnitude of the correlation is weak:
+
+$$
+\rho_s = 0.180
+$$
+
+Therefore, football performance is related to price, but the relationship is far from strong.
+
+---
+
+**Robustness Check**
+
+A player's median asking price may be unstable when it is based on only one or two observed listings.
+
+The analysis is therefore repeated using only players with at least **three comparable listings**.
+
+The relationship remains positive:
+
+$$
+\rho_s = 0.251
+$$
+
+$$
+p = 0.0284
+$$
+
+Although the sample becomes smaller, the direction of the relationship remains consistent with the main analysis.
+
+---
 
 > [!IMPORTANT]
-> **Key Finding:** When major card characteristics are kept similar, better football performance is associated with higher selling prices — but the relationship is weak. Median price rises from **$40.80** in the lowest performance group to **$50.00** in the highest group.
+> **Key Finding:** Within a tightly controlled group of comparable cards, stronger football performance is associated with somewhat higher asking prices.
+>
+> The median asking price rises from **$40.80** in the lowest performance band to **$50.00** in the highest band, while the Spearman correlation confirms a positive but weak relationship.
 
-This is an important result for the project's *Moneyball* idea:
+The result is important for the project's *Moneyball* question.
+
+Performance appears to matter, but the substantial overlap in prices shows that:
 
 > [!IMPORTANT]
-> **Performance matters, but it does not explain most of the differences in card prices.**
+> **Football performance alone does not explain most of the variation in card asking prices.**
 
-This means we need to look at other factors that may influence the market.
+In other words, the card market appears to recognize performance to some extent, but two players with similar on-field performance can still have very different asking prices.
 
-One possible factor is the player's **club**.
+This suggests that additional factors may contribute to card valuation, including player popularity, reputation, club, and other market characteristics.
 
+One possible factor to investigate next is the player's **club**.
 
 
 ## After Controlling for Performance and Card Characteristics, Does Club Still Relate to selling price?

@@ -519,7 +519,7 @@ Because of this very small sample, the Dynasty average should **not be treated a
 
 ---
 
-# 🤔How Relation Between Player Performance and Card Sell Price 
+# How Relation Between Player Performance and Card Sell Price 
 
 
 The FotMob dataset is recorded at the match level:
@@ -717,7 +717,7 @@ Before creating performance rankings, we first need to know whether FotMob Ratin
 
 *Figure 10. Distribution of season-level FotMob Ratings across the seven analysis roles. Only player-seasons with at least 900 minutes are included.*
 
-### How to Read the Graph
+How to Read the Graph
 
 Each box represents the season ratings for one football role.
 
@@ -773,7 +773,7 @@ The first question is:
 
 *Figure 11. Percentage of eligible players represented in at least one observed eBay listing, grouped by their latest eligible Season × Role performance percentile.*
 
-### How to Read the Graph
+How to Read the Graph
 
 Players are divided into four performance groups:
 
@@ -869,7 +869,7 @@ For each player, the **median selling price** is used as the market value.
 
 *Figure 12. Player-level median selling prices across performance groups within comparable 2023 Panini Prizm cards.*
 
-### How to Read the Graph
+How to Read the Graph
 
 Players are again divided into four performance groups.
 

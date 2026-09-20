@@ -425,7 +425,7 @@ The box price is the **cost of entering the product**, while the card selling pr
     <tr>
       <td><b>Luxury</b></td>
       <td>Immaculate</td>
-      <td align="center">Higher-end</td>
+      <td align="center">$871</td>
       <td>Dynasty</td>
       <td align="center">~$1,782</td>
     </tr>

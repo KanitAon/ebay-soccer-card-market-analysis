@@ -625,6 +625,7 @@ This is important because we want to measure player performance first and only t
 
 This connects directly to the main idea of the project:
 
+> [!IMPORTANT]
 > **Does the soccer card market reflect on-field performance, or do other factors create differences between performance and market value?**
 
 > [!IMPORTANT]
@@ -757,6 +758,7 @@ The analysis then calculates:
 
 The project therefore asks:
 
+> [!IMPORTANT]
 > **How well did this player perform compared with players in the same role and season?**
 
 
@@ -767,6 +769,7 @@ Now that we have a fair performance measure, we can begin connecting football pe
 
 The first question is:
 
+> [!IMPORTANT]
 > **Are better-performing players more likely to appear in the observed eBay listings?**
 
 ![eBay Market Presence by Football Performance](figure/figure11.png)
@@ -838,6 +841,7 @@ Even among the lowest-performing group, more than half of the players still appe
 
 This leads to a more important question:
 
+> [!IMPORTANT]
 > **If we compare similar cards, do better-performing players actually have higher selling prices?**
 
 
@@ -936,6 +940,7 @@ The relationship remains positive.
 
 This is an important result for the project's *Moneyball* idea:
 
+> [!IMPORTANT]
 > **Performance matters, but it does not explain most of the differences in card prices.**
 
 This means we need to look at other factors that may influence the market.
@@ -1007,6 +1012,7 @@ This provides strong evidence that club still contains market information after 
 
 This suggests an important lesson:
 
+> [!IMPORTANT]
 > **The soccer card market values more than football performance alone.**
 
 Player reputation, club visibility, popularity, collector interest, and other market factors may also influence how cards are priced.

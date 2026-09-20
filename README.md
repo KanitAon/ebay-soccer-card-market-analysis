@@ -67,13 +67,12 @@ Together, these views show **where most listings are found, which players have t
 
 ## Seller Asking-Price Market Distribution
 
+*Figure 1: Distribution of seller selling prices for 7,248 single-player soccer card listings. The x-axis shows price ranges in USD, while the y-axis shows the percentage of listings in each range.*
 <p align="center">
   <img src="figure/figure_01.png"
        alt="Seller Asking-Price Market Distribution"
        width="900">
 </p>
-
-*Figure 1: Distribution of seller selling prices for 7,248 single-player soccer card listings. The x-axis shows price ranges in USD, while the y-axis shows the percentage of listings in each range.*
 
 The graph shows that most soccer card listings are concentrated in the lower price ranges.
 
@@ -99,14 +98,12 @@ Some players appear hundreds of times, while many players appear only a few time
 
 ### How Concentrated Is the Market
 
+*Figure 2: Cumulative share of eBay listings across 443 players, ranked from the highest to lowest listing volume.*
 <p align="center">
   <img src="figure/figure_02.png"
        alt="Cumulative Concentration of Listings Across Players"
        width="900">
 </p>
-
-
-  *Figure 2: Cumulative share of eBay listings across 443 players, ranked from the highest to lowest listing volume.*
 
 The graph shows that listings are highly concentrated among a relatively small group of players.
 
@@ -121,14 +118,12 @@ This means that the eBay sample is dominated by a smaller group of highly repres
 
 ### Which Players Appear Most Often
 
+*Figure 3: Players with the highest number of observed listings in the eBay sample.*
+
 <p align="center">
   <img src="figure/figure_03.png"
        alt="Players with the Highest Listing Volume"
        width="900">
-</p>
-
-<p align="center">
-  <b>Figure 3.</b> Players with the highest number of observed listings in the eBay sample.
 </p>
 
 **Erling Haaland** has the largest listing volume with **489 listings**, or about **6.8% of the full dataset**.
@@ -148,16 +143,13 @@ The large differences between players show that some player markets have much mo
 
 The next step is to understand how the market is divided between **Topps and Panini**, and which product lines appear most often.
 
+*Figure 4: Top product lines by observed listing volume for Topps and Panini. Both charts use the same scale to make the brands easier to compare.*
+
 <p align="center">
   <img src="figure/figure_04.png"
        alt="Listing Volume by Product Line"
        width="900">
 </p>
-
-<p align="center">
-  <b>Figure 4.</b> Top product lines by observed listing volume for Topps and Panini. Both charts use the same scale to make the brands easier to compare.
-</p>
-
 
 Among the top 10 product lines shown in Figure 4:
 
@@ -211,14 +203,12 @@ This analysis compares four card types:
 - Patch Only
 - Autograph + Patch
 
+*Figure 5: Average selling price by card type. The labels also show the number of observed listings in each group.*
+
 <p align="center">
   <img src="figure/figure_05.png"
        alt="Average selling price by Card Type"
        width="900">
-</p>
-
-<p align="center">
-  <b>Figure 5.</b> Average selling price by card type. The labels also show the number of observed listings in each group.
 </p>
 
 The graph shows that cards with both an **autograph and patch** have the highest average selling price at about **$271**, followed by **autograph-only cards at $236**.
@@ -227,12 +217,46 @@ Standard cards without an autograph or patch average about **$175**, while **pat
 
 However, average prices can be affected by a small number of very expensive listings. The median prices are much closer:
 
-| Card Type | Listings | Average Price | Median Price |
-||:|:|:|
-| No Autograph / Patch | 5,784 | $174.75 | $44.99 |
-| Autograph Only | 1,125 | $235.87 | $48.00 |
-| Patch Only | 90 | $145.88 | $44.00 |
-| Autograph + Patch | 249 | $271.11 | $64.99 |
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Card Type</th>
+      <th>Listings</th>
+      <th>Average Price</th>
+      <th>Median Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No Autograph / Patch</td>
+      <td align="center">5,784</td>
+      <td align="center">$174.75</td>
+      <td align="center">$44.99</td>
+    </tr>
+    <tr>
+      <td>Autograph Only</td>
+      <td align="center">1,125</td>
+      <td align="center">$235.87</td>
+      <td align="center">$48.00</td>
+    </tr>
+    <tr>
+      <td>Patch Only</td>
+      <td align="center">90</td>
+      <td align="center">$145.88</td>
+      <td align="center">$44.00</td>
+    </tr>
+    <tr>
+      <td>Autograph + Patch</td>
+      <td align="center">249</td>
+      <td align="center">$271.11</td>
+      <td align="center">$64.99</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 The statistical results support an important point.
 
@@ -250,6 +274,8 @@ The strongest difference appears in **Autograph + Patch cards**, which are signi
 After looking at autograph and patch features, the next question is:
 
 > **For the same card type, do Panini and Topps have different selling prices?**
+
+*Figure 6: Average selling prices for Panini and Topps across four card types: standard cards, autograph cards, patch cards, and autograph + patch cards.*
 
 <p align="center">
   <img src="figure/figure_06.png"
@@ -292,14 +318,11 @@ However, a graded card is not automatically more valuable. Price can still depen
 
 To better understand the effect of grading, this analysis compares graded and ungraded cards only within the **same player and same box set**.
 
+*Figure 7: Average selling price of graded and ungraded cards within 411 matched Player × Box Set groups.*
 <p align="center">
   <img src="figure/figure_07.png"
        alt="Average selling price: Graded vs Ungraded"
        width="900">
-</p>
-
-<p align="center">
-  <b>Figure 7.</b> Average selling price of graded and ungraded cards within 411 matched Player × Box Set groups.
 </p>
 
 The graph shows a clear difference between graded and ungraded cards.
@@ -328,14 +351,12 @@ However, a card labeled as a rookie is **not automatically more expensive**. Pri
 
 To make the comparison fairer, rookie and non-rookie cards were compared only within the **same player and same box set**.
 
+*Figure 8: Average selling price of rookie and non-rookie cards within 154 matched Player × Box Set groups.*
+
 <p align="center">
   <img src="figure/figure_08.png"
        alt="Average selling price: Rookie vs Non-Rookie"
        width="900">
-</p>
-
-<p align="center">
-  <b>Figure 8.</b> Average selling price of rookie and non-rookie cards within 154 matched Player × Box Set groups.
 </p>
 
 Interestingly, the graph shows that **non-rookie cards have a higher average selling price** in this sample:
@@ -366,11 +387,44 @@ A higher-priced box usually represents a more premium product, but this does **n
 
 The box price is the **cost of entering the product**, while the card selling price shows how individual cards from that product are priced on eBay.
 
-| Tier | Panini | Approx. Box Price | Topps | Approx. Box Price |
-|||:||:|
-| **Core** | Prizm | ~$270 | Chrome | ~$228 |
-| **Mid** | Select | ~$300–320 | Merlin | ~$261 |
-| **Luxury** | Immaculate | Higher-end | Dynasty | ~$1,782 |
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Tier</th>
+      <th>Panini</th>
+      <th>Approx. Box Price</th>
+      <th>Topps</th>
+      <th>Approx. Box Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Core</b></td>
+      <td>Prizm</td>
+      <td align="center">~$270</td>
+      <td>Chrome</td>
+      <td align="center">~$228</td>
+    </tr>
+    <tr>
+      <td><b>Mid</b></td>
+      <td>Select</td>
+      <td align="center">~$300–320</td>
+      <td>Merlin</td>
+      <td align="center">~$261</td>
+    </tr>
+    <tr>
+      <td><b>Luxury</b></td>
+      <td>Immaculate</td>
+      <td align="center">Higher-end</td>
+      <td>Dynasty</td>
+      <td align="center">~$1,782</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 > **Important:** Box prices and individual card selling prices should not be compared as a direct return on investment. A box contains multiple cards, while eBay listings often represent selected cards with different players, rarity, grading, autographs, and serial numbers.
 
@@ -378,14 +432,12 @@ The box price is the **cost of entering the product**, while the card selling pr
 
 ## Average selling price by Product Tier
 
+*Figure 9: Average selling price of individual cards from comparable Panini and Topps product tiers.*
+
 <p align="center">
   <img src="figure/figure_09.png"
        alt="Average selling price by Product Tier"
        width="900">
-</p>
-
-<p align="center">
-  <b>Figure 9.</b> Average selling price of individual cards from comparable Panini and Topps product tiers.
 </p>
 
 ### Core: Prizm vs Chrome
@@ -579,16 +631,48 @@ A striker should not be directly compared with a goalkeeper, and a center-back s
 
 To make comparisons fairer, eligible player-seasons are grouped into seven roles:
 
-| FotMob Position | Analysis Role |
-|||
-| Keeper | Goalkeeper |
-| Center Back | Centre-back |
-| Left Back, Right Back, Wing-Back | Full-back / Wing-back |
-| Central Midfielder, Defensive Midfielder | Central / Defensive Midfielder |
-| Attacking Midfielder | Attacking Midfielder |
-| Left Midfielder, Right Midfielder, Winger | Wide Midfielder / Winger |
-| Striker | Striker |
+<div align="center">
 
+<table>
+  <thead>
+    <tr>
+      <th>FotMob Position</th>
+      <th>Analysis Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Keeper</td>
+      <td>Goalkeeper</td>
+    </tr>
+    <tr>
+      <td>Center Back</td>
+      <td>Centre-back</td>
+    </tr>
+    <tr>
+      <td>Left Back, Right Back, Wing-Back</td>
+      <td>Full-back / Wing-back</td>
+    </tr>
+    <tr>
+      <td>Central Midfielder, Defensive Midfielder</td>
+      <td>Central / Defensive Midfielder</td>
+    </tr>
+    <tr>
+      <td>Attacking Midfielder</td>
+      <td>Attacking Midfielder</td>
+    </tr>
+    <tr>
+      <td>Left Midfielder, Right Midfielder, Winger</td>
+      <td>Wide Midfielder / Winger</td>
+    </tr>
+    <tr>
+      <td>Striker</td>
+      <td>Striker</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 This creates seven comparison groups:
 
 1. **Goalkeeper**
@@ -684,12 +768,41 @@ The first question is:
 
 Players are divided into four performance groups:
 
-| Performance Band | Players Represented | eBay Presence |
-||:|:|
-| 0–25th percentile | 101 of 197 | **51.3%** |
-| 25–50th percentile | 91 of 151 | **60.3%** |
-| 50–75th percentile | 74 of 105 | **70.5%** |
-| 75–100th percentile | 92 of 114 | **80.7%** |
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Performance Band</th>
+      <th>Players Represented</th>
+      <th>eBay Presence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0–25th percentile</td>
+      <td align="center">101 of 197</td>
+      <td align="center"><b>51.3%</b></td>
+    </tr>
+    <tr>
+      <td>25–50th percentile</td>
+      <td align="center">91 of 151</td>
+      <td align="center"><b>60.3%</b></td>
+    </tr>
+    <tr>
+      <td>50–75th percentile</td>
+      <td align="center">74 of 105</td>
+      <td align="center"><b>70.5%</b></td>
+    </tr>
+    <tr>
+      <td>75–100th percentile</td>
+      <td align="center">92 of 114</td>
+      <td align="center"><b>80.7%</b></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 A clear pattern appears.
 
@@ -751,12 +864,41 @@ For each player, the **median selling price** is used as the market value.
 
 Players are again divided into four performance groups.
 
-| Performance Band | Players | Median selling price |
-||:|:|
-| 0–25th percentile | 50 | **$40.80** |
-| 25–50th percentile | 46 | **$41.30** |
-| 50–75th percentile | 46 | **$44.20** |
-| 75–100th percentile | 67 | **$50.00** |
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Performance Band</th>
+      <th>Players</th>
+      <th>Median Selling Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0–25th percentile</td>
+      <td align="center">50</td>
+      <td align="center"><b>$40.80</b></td>
+    </tr>
+    <tr>
+      <td>25–50th percentile</td>
+      <td align="center">46</td>
+      <td align="center"><b>$41.30</b></td>
+    </tr>
+    <tr>
+      <td>50–75th percentile</td>
+      <td align="center">46</td>
+      <td align="center"><b>$44.20</b></td>
+    </tr>
+    <tr>
+      <td>75–100th percentile</td>
+      <td align="center">67</td>
+      <td align="center"><b>$50.00</b></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 The median selling price increases gradually with player performance.
 

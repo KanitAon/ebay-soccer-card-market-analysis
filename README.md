@@ -311,7 +311,7 @@ Because card prices are highly skewed, these averages should still be read toget
 > [!IMPORTANT]
 > **Key Finding:** Brand does not affect every card type in the same way. The strongest Panini–Topps price gap appears among cards with **no autograph or patch**, while autograph and patch cards have much closer average prices. For newcomers, this means **do not assume one brand is always more expensive — compare the same card type across brands before buying**.
 
-## Grading Affect selling price
+## Grading Affect Selling Price
 
 Before comparing prices, it is useful to understand what **card grading** means.
 
